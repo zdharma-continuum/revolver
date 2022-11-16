@@ -6,6 +6,12 @@ A progress spinner for ZSH scripts
 
 ## Installation
 
+### [Zinit](https://github.com/zdharma-continuum/revolver)
+
+```sh
+zinit for as'command' pick'revolver' @zdharma-continuum/revolver
+```
+
 ### [Zulu](https://github.com/zulu-zsh/zulu)
 
 ```sh
@@ -15,21 +21,15 @@ zulu install revolver
 ### zplug
 
 ```sh
-zplug "molovo/revolver", \
+zplug "zdharma-continuum/revolver", \
   as:command, \
   use:revolver
-```
-
-### [Homebrew](http://brew.sh)
-
-```sh
-brew install molovo/revolver/revolver
 ```
 
 ### Manual
 
 ```sh
-git clone https://github.com/molovo/revolver revolver
+git clone https://github.com/zdharma-continuum/revolver revolver
 chmod u+x revolver/revolver
 mv revolver/revolver /usr/local/bin
 ```
@@ -46,6 +46,21 @@ revolver update 'A different message'
 # Do something else here
 
 revolver stop
+```
+
+## Hiding cursor
+
+ You can hide the cursor during revolver operation, to do this pass option `-i`
+ or `--hide-cursor` for the opening `revolver` invocation:
+
+```sh
+revolver -i start "Your awesome message"
+```
+
+Or
+
+```sh
+revolver --hide-cursor start "Your awesome message"
 ```
 
 ## Styles
