@@ -16,8 +16,8 @@ zulu install revolver
 
 ```sh
 zplug "molovo/revolver", \
-  as:command, \
-  use:revolver
+	as:command, \
+	use:revolver
 ```
 
 ### [Homebrew](http://brew.sh)
@@ -50,9 +50,8 @@ revolver stop
 
 ## Styles
 
-Revolver comes with a `revolver demo` command which demonstrates each of the
-included spinner styles. Once you've found one you like, select it using the
-`--style` option.
+Revolver comes with a `revolver demo` command which demonstrates each of the included spinner styles. Once you've found
+one you like, select it using the `--style` option.
 
 ```sh
 revolver --style 'bouncingBall' start 'The spinner message'
@@ -66,4 +65,4 @@ Revolver is licensed under The MIT License (MIT)
 
 ## Team
 
-* [James Dinsdale](http://molovo.co)
+- [James Dinsdale](http://molovo.co)
